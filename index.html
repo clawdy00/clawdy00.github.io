@@ -62,10 +62,9 @@
     .gradient-text{background:linear-gradient(135deg,var(--dark-accent),var(--dark-accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 
     /* ═══════════════════════════════════════════
-       SECTIONS
+       SECTIONS — unified dark body
        ═══════════════════════════════════════════ */
     section.section{padding:100px 24px;position:relative;overflow:hidden}
-    section.section.light{background:var(--surface)}
     section.section.dark{
       background:radial-gradient(ellipse 80% 60% at 20% 50%, rgba(125,211,252,.04) 0%, transparent 50%),
                  radial-gradient(ellipse 40% 70% at 90% 30%, rgba(167,139,250,.04) 0%, transparent 50%),
@@ -79,22 +78,17 @@
       width:44px;height:44px;border-radius:14px;
       font-size:.78rem;font-weight:700;letter-spacing:.04em;
       margin-bottom:20px;
+      background:rgba(125,211,252,.08);
+      border:1px solid rgba(125,211,252,.15);
+      color:var(--dark-accent);
     }
-    .light .sec-num{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
-    .dark  .sec-num{background:rgba(125,211,252,.08);border:1px solid rgba(125,211,252,.15);color:var(--dark-accent)}
 
-    .section-label{display:block;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
-    .light .section-label{color:var(--accent)}
-    .dark  .section-label{color:var(--dark-accent)}
+    .section-label{display:block;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;color:var(--dark-accent)}
 
-    .section h2{font-size:2.2rem;margin:0 0 28px;letter-spacing:-.03em;font-weight:720;line-height:1.15}
-    .dark .section h2{color:var(--dark-text)}
-    .section h2 em{font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
-    .dark .section h2 em{background:linear-gradient(135deg,var(--dark-accent),var(--dark-accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .section h2{font-size:2.2rem;margin:0 0 28px;letter-spacing:-.03em;font-weight:720;line-height:1.15;color:var(--dark-text)}
+    .section h2 em{font-style:normal;background:linear-gradient(135deg,var(--dark-accent),var(--dark-accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 
-    .section p,.section li{line-height:1.78;font-size:1.03rem}
-    .light p,.light li{color:var(--muted2)}
-    .dark  p,.dark  li{color:var(--dark-muted)}
+    .section p,.section li{line-height:1.78;font-size:1.03rem;color:var(--dark-muted)}
     .section p + p{margin-top:18px}
     .section ul{margin:12px 0 0;padding-left:0;list-style:none}
     .section li + li{margin-top:18px}
@@ -120,11 +114,11 @@
       border-radius:10px;
       display:flex;align-items:center;justify-content:center;
       font-size:.78rem;font-weight:700;
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-      color:#fff;
+      background:linear-gradient(135deg,var(--dark-accent),var(--dark-accent2));
+      color:var(--dark-bg);
     }
-    .principle-item strong{display:block;color:var(--text);font-size:.98rem;margin-bottom:2px}
-    .principle-item span{color:var(--muted2);font-size:.91rem;line-height:1.55;display:block}
+    .principle-item strong{display:block;color:var(--dark-text);font-size:.98rem;margin-bottom:2px}
+    .principle-item span{color:var(--dark-muted2);font-size:.91rem;line-height:1.55;display:block}
 
     /* footer */
     .footer-wrap{
@@ -247,7 +241,7 @@
     </div>
   </section>
 
-  <section class="section light">
+  <section class="section dark">
     <div class="section-inner">
       <div class="sec-num">02</div>
       <div class="section-label">Approach</div>
@@ -268,7 +262,7 @@
     </div>
   </section>
 
-  <section class="section light">
+  <section class="section dark">
     <div class="section-inner">
       <div class="sec-num">04</div>
       <div class="section-label">Values</div>
