@@ -62,15 +62,9 @@
     .gradient-text{background:linear-gradient(135deg,var(--dark-accent),var(--dark-accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 
     /* ═══════════════════════════════════════════
-       SECTIONS — unified dark body
+       SECTIONS — light body
        ═══════════════════════════════════════════ */
     section.section{padding:100px 24px;position:relative;overflow:hidden}
-    section.section.dark{
-      background:radial-gradient(ellipse 80% 60% at 20% 50%, rgba(125,211,252,.04) 0%, transparent 50%),
-                 radial-gradient(ellipse 40% 70% at 90% 30%, rgba(167,139,250,.04) 0%, transparent 50%),
-                 linear-gradient(170deg,var(--dark-bg2) 0%,var(--dark-bg) 100%);
-      color:var(--dark-text);
-    }
     .section-inner{max-width:720px;margin:0 auto;position:relative;z-index:1}
 
     .sec-num{
@@ -78,17 +72,16 @@
       width:44px;height:44px;border-radius:14px;
       font-size:.78rem;font-weight:700;letter-spacing:.04em;
       margin-bottom:20px;
-      background:rgba(125,211,252,.08);
-      border:1px solid rgba(125,211,252,.15);
-      color:var(--dark-accent);
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff;
     }
 
-    .section-label{display:block;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;color:var(--dark-accent)}
+    .section-label{display:block;font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px;color:var(--accent)}
 
-    .section h2{font-size:2.2rem;margin:0 0 28px;letter-spacing:-.03em;font-weight:720;line-height:1.15;color:var(--dark-text)}
-    .section h2 em{font-style:normal;background:linear-gradient(135deg,var(--dark-accent),var(--dark-accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .section h2{font-size:2.2rem;margin:0 0 28px;letter-spacing:-.03em;font-weight:720;line-height:1.15;color:var(--text)}
+    .section h2 em{font-style:normal;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
 
-    .section p,.section li{line-height:1.78;font-size:1.03rem;color:var(--dark-muted)}
+    .section p,.section li{line-height:1.78;font-size:1.03rem;color:var(--muted2)}
     .section p + p{margin-top:18px}
     .section ul{margin:12px 0 0;padding-left:0;list-style:none}
     .section li + li{margin-top:18px}
@@ -98,14 +91,14 @@
     .cap-item{
       display:flex;align-items:flex-start;gap:14px;
       padding:18px;border-radius:16px;
-      background:rgba(125,211,252,.04);
-      border:1px solid var(--dark-line);
+      background:var(--surface2);
+      border:1px solid rgba(148,163,184,.25);
       transition:border-color .2s,background .2s;
     }
-    .cap-item:hover{border-color:rgba(125,211,252,.25);background:rgba(125,211,252,.06)}
+    .cap-item:hover{border-color:rgba(79,70,229,.25);background:rgba(79,70,229,.03)}
     .cap-icon{font-size:1.3rem;line-height:1;flex-shrink:0;margin-top:1px}
-    .cap-text strong{display:block;color:var(--dark-text);font-size:.95rem;margin-bottom:3px}
-    .cap-text span{color:var(--dark-muted2);font-size:.88rem;line-height:1.5}
+    .cap-text strong{display:block;color:var(--text);font-size:.95rem;margin-bottom:3px}
+    .cap-text span{color:var(--muted2);font-size:.88rem;line-height:1.5}
 
     /* principles */
     .principle-item{display:flex;gap:16px;align-items:flex-start}
@@ -114,11 +107,11 @@
       border-radius:10px;
       display:flex;align-items:center;justify-content:center;
       font-size:.78rem;font-weight:700;
-      background:linear-gradient(135deg,var(--dark-accent),var(--dark-accent2));
-      color:var(--dark-bg);
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      color:#fff;
     }
-    .principle-item strong{display:block;color:var(--dark-text);font-size:.98rem;margin-bottom:2px}
-    .principle-item span{color:var(--dark-muted2);font-size:.91rem;line-height:1.55;display:block}
+    .principle-item strong{display:block;color:var(--text);font-size:.98rem;margin-bottom:2px}
+    .principle-item span{color:var(--muted2);font-size:.91rem;line-height:1.55;display:block}
 
     /* footer */
     .footer-wrap{
@@ -189,7 +182,7 @@
     </div>
   </div>
 
-  <section class="section dark">
+  <section class="section">
     <div class="section-inner">
       <div class="sec-num">01</div>
       <div class="section-label">Capabilities</div>
@@ -241,7 +234,7 @@
     </div>
   </section>
 
-  <section class="section dark">
+  <section class="section">
     <div class="section-inner">
       <div class="sec-num">02</div>
       <div class="section-label">Approach</div>
@@ -252,7 +245,7 @@
     </div>
   </section>
 
-  <section class="section dark">
+  <section class="section">
     <div class="section-inner">
       <div class="sec-num">03</div>
       <div class="section-label">Identity</div>
@@ -262,7 +255,7 @@
     </div>
   </section>
 
-  <section class="section dark">
+  <section class="section">
     <div class="section-inner">
       <div class="sec-num">04</div>
       <div class="section-label">Values</div>
